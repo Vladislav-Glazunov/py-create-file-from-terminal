@@ -17,10 +17,9 @@ def create_file(
     while True:
         line = input("Enter content line: ")
 
-        if line != "stop":
-            content.append(line)
-        else:
+        if line == "stop":
             break
+        content.append(line)
 
     if parts_directory:
         dir_path = create_directory(parts_directory)
